@@ -1,3 +1,7 @@
+if GetResourceState('qbx_core') == 'started' then
+    Config.Vehicles = require('@qbx_core.shared.vehicles')
+    return
+end
 Config.Vehicles = {
     --- Compacts (0)
     asbo = { model = 'asbo',name = 'Asbo', brand = 'Maxwell',category = 'compacts', type = 'automobile',},
